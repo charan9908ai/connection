@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Child Component">
+        <!-- Parent → Child -->
+        <p><strong>Parent says:</strong> {parentMessage}</p>
+
+        <!-- Child → Parent -->
+        <lightning-button 
+            label="Send Message to Parent"
+            onclick={notifyParent}
+            class="slds-m-top_small">
+        </lightning-button>
+    </lightning-card>
+</template>
